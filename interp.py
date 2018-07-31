@@ -29,8 +29,8 @@ def parse(line):
 			done += c
 		elif not inString and c.isalpha():
 			word+=c
-		if(len(cand)>0):
-			cand = ""
+			if(len(cand)>0):
+				cand = ""
 			try:
 				cand = reserved[word]
 			except:
